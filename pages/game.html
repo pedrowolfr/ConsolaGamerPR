@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <!-- Aquí se lleva el record -->
+    <div id="ui">
+      <span id="score"></span>
+    </div>
+
+    <!-- Aquí esta todo el contenido de la consola -->
+    <div class="console">
+      <!-- Aquí se muestra la pantalla del juego -->
+      <div class="screen-cont">
+        <div class="container">
+          <div id="canvas"></div>
+        </div>
+      </div>
+      <div class="nintendo-text">SNAKENDO</div>
+
+      <!-- Aquí estan los botones de control -->
+      <div class="controls-cont">
+        <div class="d-pad">
+          <button id="upButton"><div id="triangleUp"></div></button>
+          <button id="downButton"><div id="triangleDown"></div></button>
+          <button id="leftButton"><div id="triangleLeft"></div></button>
+          <button id="rightButton"><div id="triangleRight"></div></button>
+        </div>
+
+        <div class="action">
+          <button id="buttona">A</button>
+          <button id="buttonb">B</button>
+        </div>
+
+        <div class="below">
+          <button id="replay">Start</button>
+          <button id="replay">Select</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
