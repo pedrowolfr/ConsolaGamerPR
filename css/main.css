@@ -1,0 +1,290 @@
+/*fondo*/
+
+body {
+  background-color: #192233;
+}
+
+/*carcasa de consola*/
+.console {
+  position: relative;
+  display: flex;
+  margin: 20px auto;
+  width: 422px;
+  height: 697px;
+  background: #eeeeee;
+  border-radius: 10px 10px 60px 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+.console:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  border-bottom: 4px solid #9b0000;
+}
+.console:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 334px;
+  height: 31px;
+  border-left: 4px solid #9b0000;
+  border-right: 4px solid #9b0000;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/*contenido de pantalla*/
+.screen-cont {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 342px;
+  height: 272px;
+  margin-bottom: 58px;
+  background-color: #000000;
+  border-radius: 13px 13px 50px 13px;
+}
+.container {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  width: 342px;
+  height: 272px;
+  margin-bottom: 58px;
+}
+canvas {
+  background-color: #181825;
+}
+
+.nintendo-text {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  color: #9b0000;
+  font-weight: bold;
+}
+
+/*contenedor de controles*/
+.controls-cont {
+  position: absolute;
+  display: flex;
+  margin-top: 85%;
+  width: 53vw;
+  height: 40vh;
+}
+
+/*d-pad se refiere a la posicion de las teclas de direccion*/
+.d-pad {
+  display: flex;
+  position: relative;
+  height: 25vh;
+  width: 23vw;
+}
+@media (max-width: 768px) {
+  .d-pad {
+    display: flex;
+    position: relative;
+    height: 26vh;
+    width: 90vw;
+  }
+}
+#upButton,
+#downButton,
+#leftButton,
+#rightButton {
+  position: absolute;
+  display: flex;
+  border-radius: 10em;
+  width: 3vw;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #192233;
+}
+@media (max-width: 768px) {
+  #upButton,
+  #downButton,
+  #leftButton,
+  #rightButton {
+    position: absolute;
+    display: flex;
+    border-radius: 10em;
+    width: 6vw;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#upButton {
+  top: 15%;
+  left: 25%;
+}
+#downButton {
+  top: 57%;
+  left: 25%;
+}
+#leftButton {
+  top: 36%;
+  left: 13%;
+}
+#rightButton {
+  top: 36%;
+  left: 36%;
+}
+@media (max-width: 768px) {
+  #upButton {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media (max-width: 768px) {
+  #downButton {
+    top: 60%;
+    left: 40%;
+  }
+}
+@media (max-width: 768px) {
+  #leftButton {
+    top: 40%;
+    left: 20%;
+  }
+}
+@media (max-width: 768px) {
+  #rightButton {
+    top: 40%;
+    left: 60%;
+  }
+}
+#triangleUp {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid rgb(150, 150, 150);
+  position: absolute;
+}
+#triangleLeft {
+  border-top: 12px solid transparent;
+  border-right: 18px solid rgb(150, 150, 150);
+  border-bottom: 12px solid transparent;
+  position: absolute;
+}
+#triangleRight {
+  border-top: 12px solid transparent;
+  border-right: 18px solid rgb(150, 150, 150);
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+#triangleDown {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid rgb(150, 150, 150);
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+/*botones A Y B*/
+.action {
+  left: -15%;
+  display: flex;
+  position: relative;
+  height: 25vh;
+  width: 10vw;
+}
+@media (max-width: 768px) {
+  .action {
+    left: 20%;
+    display: flex;
+    position: relative;
+    height: 26vh;
+    width: 50vw;
+  }
+}
+#buttona {
+  top: 40%;
+  left: 25%;
+  position: absolute;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 5em;
+  background-color: #9b0000;
+  font-size: large;
+  color: #eeeeee;
+}
+#buttonb {
+  top: 30%;
+  left: 60%;
+  position: absolute;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 5em;
+  background-color: #9b0000;
+  font-size: large;
+  color: #eeeeee;
+}
+@media (max-width: 768px) {
+  #buttona {
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    width: 6vw;
+    height: 6vh;
+    border-radius: 5em;
+    background-color: #9b0000;
+    font-size: large;
+  }
+}
+@media (max-width: 768px) {
+  #buttonb {
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    width: 6vw;
+    height: 6vh;
+    border-radius: 5em;
+    background-color: #9b0000;
+    font-size: large;
+  }
+}
+
+/*aqui se encuentran los botones de start y select*/
+.below {
+  justify-content: space-between;
+  top: 75%;
+  left: -44%;
+  display: flex;
+  position: relative;
+  height: 5vh;
+  width: 8vw;
+}
+@media (max-width: 768px) {
+  .below {
+    justify-content: space-between;
+    top: 75%;
+    left: -35%;
+    display: flex;
+    position: relative;
+    height: 5vh;
+    width: 50vw;
+  }
+}
+#replay {
+  background-color: #6e6e6e;
+  border-radius: 20%;
+  text-align: center;
+  width: 50px;
+  color: #eeeeee;
+  font-size: 90%;
+}
+@media (max-width: 768px) {
+  #replay {
+    background-color: #6e6e6e;
+    border-radius: 20%;
+    text-align: center;
+    width: 50px;
+    color: #eeeeee;
+    font-size: 90%;
+  }
+}
